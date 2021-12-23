@@ -9,6 +9,7 @@ export class ProductListComponent {
   pageTitle = 'Product List';
   imageWidth = 50;
   imageMargin = 2;
+  showImage = false;
 
   products: any[] = [
     {
@@ -33,5 +34,7 @@ export class ProductListComponent {
     }
   ];
 
-
+  toggleImage() : void {
+    this.showImage = !this.showImage;
+  }
 }
