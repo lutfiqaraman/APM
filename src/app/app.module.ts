@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
 
 // Project components
 import { AppComponent } from './app.component';
@@ -25,7 +26,8 @@ import { ConvertToSpaces } from "./shared/convert-to-spaces.pipe";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
