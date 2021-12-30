@@ -1,12 +1,11 @@
 import {Component, OnDestroy, OnInit} from "@angular/core";
-import { IProduct } from "./product";
-import {ProductService} from "./product.service";
+import { IProduct } from "../Models/product";
+import { ProductService } from "../Services/product.service";
 import {Subscription} from "rxjs";
 
 @Component({
-  selector: 'pm-products',
-  templateUrl: 'product-list.component.html',
-  styleUrls: ['product-list.component.css']
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.css']
 })
 
 export class ProductListComponent implements OnInit, OnDestroy{
