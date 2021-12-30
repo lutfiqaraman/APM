@@ -13,6 +13,7 @@ import { StarComponent } from "./shared/star.component";
 
 // Custom Pipeline
 import { ConvertToSpaces } from "./shared/convert-to-spaces.pipe";
+import {AppRoutes} from "./app.routes";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ConvertToSpaces } from "./shared/convert-to-spaces.pipe";
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
