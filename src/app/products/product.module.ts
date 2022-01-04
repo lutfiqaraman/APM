@@ -1,23 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import {ProductListComponent} from "./ProductsList/product-list.component";
 import {ProductDetailComponent} from "./ProductDetails/product-detail.component";
 import {ConvertToSpaces} from "../shared/convert-to-spaces.pipe";
-import {StarComponent} from "../shared/star.component";
-import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     ProductListComponent,
     ProductDetailComponent,
-    ConvertToSpaces,
-    StarComponent
+    ConvertToSpaces
   ],
   imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class ProductModule { }
