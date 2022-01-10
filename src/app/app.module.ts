@@ -10,11 +10,13 @@ import { WelcomeComponent } from './welcome/welcome.component';
 // Custom Pipeline
 import {AppRoutes} from "./app.routes";
 import { ProductModule } from './products/product.module';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
